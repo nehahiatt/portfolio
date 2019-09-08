@@ -1,0 +1,26 @@
+<div class="container">
+    <div ng-if="case.picture_position" class="row">
+        <div class="col-xs-12 col-sm-5">
+            <p class="title">{{ case.title }}</p>
+            <p class="description">{{ case.description }}</p>
+            <p class="subtext" ng-hide="!case.subtext">{{ case.subtext }}</p>
+            <a class="button" href="{{case.button_url}}" target="_blank">{{ case.button_text }}</a>
+        </div>
+        <div class="col-xs-12 col-sm-7">
+            <img class="thumb" ng-src="{{ case.thumb_url }}" style="{{case.custom_styles}}"> 
+        </div>
+    </div>
+
+    <div ng-if="!case.picture_position" class="row">
+        <div class="col-xs-12 col-sm-6">
+            <img class="thumb" ng-src="{{ case.thumb_url }}" style="{{case.custom_styles}}"> 
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <p class="title">{{ case.title }}</p>
+            <p class="description">{{ case.description }}</p>
+            <p class="subtext" ng-hide="!case.subtext">{{ case.subtext }}</p>
+            <a class="button" href="{{case.button_url}}" target="_blank">{{ case.button_text }}</a>
+        </div>
+    </div>
+</div>
+
