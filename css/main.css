@@ -5,7 +5,7 @@ html {
 
 body {
     font-family: 'Josefin Slab', serif; 
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
     letter-spacing: 0.5px;
 }
@@ -29,7 +29,7 @@ footer {
 footer a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    display: inline-block;
+    display: inline;
     padding-bottom: 10px;
     color: black;
 }
@@ -39,12 +39,17 @@ footer a:hover {
     color: black;
 }
 
+footer a img.text {
+    width: 30%;
+    margin-bottom: 5px;
+}
+
 
 
 /*about*/
 .about .container {
     padding: 80px;
-}
+} 
 
 .about h1 {
     font-family: 'Montserrat', sans-serif;
@@ -59,11 +64,17 @@ footer a:hover {
     padding-top: 10px;
 }
 
-.about img {
-    width: 85%;
+.about img.profile {
+    width: 100%;
     display: block;
     margin: auto;
 }
+
+.about img.text {
+    width: 60%;
+    margin-left: 0;
+}
+
 
 
 
@@ -169,3 +180,34 @@ footer a:hover {
     margin-right:0;
 }
 
+
+
+
+/*media queries*/
+/*tablet*/
+@media screen and (max-width: 992px) {
+    .about img.profile {
+      margin-top: 20px;
+    }
+
+    .shot img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .shot:first-child img {
+        margin-left: auto;
+    }
+    
+    .shot:last-child img {
+        margin-right: auto;
+    }
+
+    .samples .container {
+        padding: 40px 80px 40px;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 768px) {
+}

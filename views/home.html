@@ -2,17 +2,19 @@
 
   <section class="about">
     <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <h1>Well Hello There!</h1>
-            <p>I'm Neha, product designer currently working at Capital One. I specialize in UI/UX, design systems and front end development. My approach to design goes beyond visual aesthetics—it’s holistic, user-centered and collaborative. I’m passionate about creating simple solutions that solve needs for both the customer and business. My biggest strength is my background in both development and design, allowing me to create experiences with both perspectives in mind.
-           </p>
-          </div>
-          
-          <div class="col-xs-12 col-sm-6">
-            <img src="images/profile-pic.png">  
-          </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <img class="text" src="images/well-hello-there-text.png">
+          <!-- <h1>Well Hello There!</h1> -->
+          <p>I'm Neha, product designer currently working at Capital One. I specialize in UI/UX, design systems and front end development. My approach to design goes beyond visual aesthetics—it’s holistic, user-centered and collaborative. I’m passionate about creating simple solutions that solve needs for both the customer and business. My biggest strength is my background in both development and design, allowing me to create experiences with both perspectives in mind.
+          </p>
+          <!-- <a class="button" href="{{case.button_url}}" target="_blank">VIEW MORE ABOUT ME</a> -->
         </div>
+        
+        <div class="col-sm-12 col-md-6">
+          <img class="profile" src="../images/profile-pic.png">  
+        </div>
+      </div>
     </div>
   </section>
 
@@ -26,7 +28,7 @@
         <h5 class="col-sm-12">SAMPLES OF MY WORK</h5>
 
         <div class="shots">
-          <div class="shot col-sm-4" ng-repeat="shot in shots | limitTo : 3 : 0"> 
+          <div class="shot col-sm-12 col-md-4" ng-repeat="shot in shots | limitTo : 3 : 0"> 
             <a href="{{ shot.shot_url }}" target="_blank"><img ng-src="{{ shot.thumbnail }}"></a>
           </div>
         </div>
@@ -44,7 +46,7 @@
           <h5 class="col-sm-12">SAMPLES OF MY WORK</h5>
   
           <div class="shots">
-            <div class="shot col-sm-4" ng-repeat="shot in shots | limitTo : 3 : 3"> 
+            <div class="shot col-sm-12 col-md-4" ng-repeat="shot in shots | limitTo : 3 : 3"> 
               <a href="{{ shot.shot_url }}" target="_blank"><img ng-src="{{ shot.thumbnail }}"></a>
             </div>
           </div>
@@ -63,7 +65,7 @@
         <h5 class="col-sm-12">SAMPLES OF MY WORK</h5>
 
         <div class="shots">
-          <div class="shot col-sm-4" ng-repeat="shot in shots | limitTo : 3 : 6"> 
+          <div class="shot col-sm-12 col-md-4" ng-repeat="shot in shots | limitTo : 3 : 6"> 
             <a href="{{ shot.shot_url }}" target="_blank"><img ng-src="{{ shot.thumbnail }}"></a>
           </div>
         </div>
@@ -82,7 +84,7 @@
         <h5 class="col-sm-12">SAMPLES OF MY WORK</h5>
 
         <div class="shots">
-          <div class="shot col-sm-4" ng-repeat="shot in shots | limitTo : 3 : 9"> 
+          <div class="shot col-sm-12 col-md-4" ng-repeat="shot in shots | limitTo : 3 : 9"> 
             <a href="{{ shot.shot_url }}" target="_blank"><img ng-src="{{ shot.thumbnail }}"></a>
           </div>
         </div>
