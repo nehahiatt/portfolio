@@ -210,4 +210,7 @@ footer a img.text {
 
 /*mobile*/
 @media screen and (max-width: 768px) {
+    footer a img.text {
+        width: 50%;
+    }
 }
