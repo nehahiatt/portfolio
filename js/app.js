@@ -6,10 +6,10 @@ app.config(function ($routeProvider) {
       controller: 'MainController', 
       templateUrl: 'views/home.html' 
     }) 
-    .when('/case/:id', {
-	    // controller: 'CaseController', 
-      templateUrl: 'views/case.html' 
-    })
+    // .when('/case/:id', {
+	   //  controller: 'CaseController', 
+    //   templateUrl: 'views/case.html' 
+    // })
     .otherwise({ 
       redirectTo: '/' 
     }); 

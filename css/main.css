@@ -10,6 +10,10 @@ body {
     letter-spacing: 0.5px;
 }
 
+.main {
+    padding-top: 10px;
+}
+
 .container {
     padding: 40px 80px 40px;
 }
@@ -17,6 +21,69 @@ body {
 .row {
     margin: auto;
 }
+
+header nav {
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, .95);
+    text-align: right;
+    padding: 20px 80px;
+    z-index: 1;
+}
+
+header .menu {
+    background: rgba(80, 177, 210, 0.95);
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+header .menu.closed {
+    opacity: 0;
+}
+
+header .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+header .menu.closed .overlay {
+    opacity: 0.4;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+}
+
+header .menu a {
+    color: white;
+    display: block;
+    font-size: 4rem;
+    padding: 8px;
+    font-weight: 300;
+}
+
+header .menubtn {
+    cursor: pointer;
+}
+
+header .closebtn {
+    text-align: right;
+    padding: 20px 80px;
+    cursor: pointer;
+}
+
 
 footer {
     font-family: 'Josefin Slab', serif;

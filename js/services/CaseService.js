@@ -23,7 +23,7 @@ app.factory('cases', ['$http', function($http) {
         },
         {
             "title": "Embracing Design Systems",
-            "description": "I left my footprint at Capital One by establishing our very first version of a design system to house both developer and designer documentation. Today, this is used across product teams as a single source of truth to enable designers to design with speed and accuracy.",
+            "description": "I made an impact at Capital One by establishing our very first version of a design system to house both developer and designer documentation. Today, this is used across product teams as a single source of truth to enable designers to design with speed and accuracy.",
             "thumb_url": "images/cases/design-systems-thumb.png",
             "button_text":"Get a sneak peek",
             "button_url":"https://dribbble.com/shots/7066379-Capital-One-EASE-Design-System",
