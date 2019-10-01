@@ -1,4 +1,4 @@
-app.factory('shots', ['$http', function($http) {
+app.factory('shots', [function() {
     var shotsObject = [
         {
             "title": "Chat Loading Indicator",

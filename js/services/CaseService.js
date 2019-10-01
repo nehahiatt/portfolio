@@ -1,4 +1,4 @@
-app.factory('cases', ['$http', function($http) {
+app.factory('cases', [function() {
     var casesObject = [
         {
             "title": "Collab",

@@ -5,7 +5,11 @@ app.config(function ($routeProvider) {
     .when('/', { 
       controller: 'MainController', 
       templateUrl: 'views/home.html' 
-    }) 
+    })
+    .when('/about', {
+      controller: 'AboutController', 
+      templateUrl: 'views/about.html' 
+    })  
     // .when('/case/:id', {
 	   //  controller: 'CaseController', 
     //   templateUrl: 'views/case.html' 

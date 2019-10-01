@@ -1,0 +1,48 @@
+<div id="about" class="main" ng-controller="AboutController">
+
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12"><img src="images/about/banner.png"></div>
+        <div class="col-sm-12">
+          <p>I'm Neha, product designer currently working at Capital One. I specialize in UI/UX, design systems and front end development. My approach to design goes beyond visual aesthetics—it’s holistic, user-centered and collaborative. I’m passionate about creating simple solutions that solve needs for both the customer and business. My biggest strength is my background in both development and design, allowing me to create experiences with both perspectives in mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Fun Facts</h2>
+          <ul>
+            <li>I'm a zumba instructor. <a href="https://www.zumba.com/en-US/profile/neha-sohail/1616463">Come say hi and attend one of my classes!</a></li>
+            <li>I can dive up to 60ft as a certified diver.</li>
+            <li>I'm a proud wife &#38; boy mom.</li>
+            <li>Interior design enthusiast. Always searching for my next big project!</li>
+            <li>Meyer-Briggs Personality: ESFJ</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="collage">
+            <div class="picture" style="background-image:url({{picture.image_url}});" ng-repeat="picture in collage"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Work Experience</h2>
+          <p>Want to learn more about my skills and experience? View my resume here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

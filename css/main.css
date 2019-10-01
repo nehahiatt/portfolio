@@ -8,6 +8,25 @@ body {
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: 0.5px;
+    color: black;
+}
+
+p, ul {
+    font-size: 1.5rem;
+}
+
+ul {
+    line-height: 2rem;
+    padding-left: 30px;
+}
+
+a {
+    color: rgb(80, 177, 210);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(80, 177, 210);
 }
 
 .main {
@@ -47,6 +66,7 @@ header .menu {
 
 header .menu.closed {
     opacity: 0;
+    visibility: hidden;
 }
 
 header .overlay {
@@ -57,6 +77,7 @@ header .overlay {
     transform: translate(-50%, -50%);
 
     opacity: 1;
+    visibility: visible;
     transition: transform 0.5s, opacity 0.5s;
 }
 
@@ -64,6 +85,7 @@ header .menu.closed .overlay {
     opacity: 0.4;
     -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
+    visibility: hidden;
 }
 
 header .menu a {
@@ -89,8 +111,11 @@ footer {
     font-family: 'Josefin Slab', serif;
     font-weight: 400;
     text-align: center;
+    padding: 20px;
+}
+
+footer p {
     font-size: 1.1rem;
-    padding: 0 20px 20px 20px;
 }
 
 footer a {
@@ -108,21 +133,12 @@ footer a:hover {
 
 
 
-/*about*/
+/*about section on home page*/
 .about .container {
     padding: 80px;
 } 
 
-.about h1 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin-top: 0px;
-}
-
 .about p {
-    font-size: 1.5rem;
     padding-top: 10px;
 }
 
@@ -183,7 +199,6 @@ footer a:hover {
 .case-study .description {
     font-weight: 300;
     color: #fff;
-    font-size: 1.5rem;
 }
 
 .case-study .button {
@@ -244,7 +259,68 @@ footer a:hover {
 }
 
 
+/*about page*/
+#about h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
+    font-size: 2.2rem;
+    margin-top: 0px;
+}
 
+#about .container {
+    padding-bottom: 40px;
+}
+
+ul li {
+    padding-left: 10px;
+    margin: 10px 0px;
+}
+
+.collage {
+    margin-top: 20px;
+}
+
+.collage .picture {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1200px) {
+    .collage .picture {
+        height: 160px;
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .collage .picture {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .collage .picture {
+        height: 220px;
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .collage .picture {
+        height: 300px;
+        width: 100%;
+        background-position: 50%;
+    }
+}
 
 /*media queries*/
 /*tablet*/
