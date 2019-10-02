@@ -34,7 +34,7 @@ a:hover {
 }
 
 .container {
-    padding: 40px 80px 40px;
+    padding: 40px;
 }
 
 .row {
@@ -47,7 +47,7 @@ header nav {
     width: 100%;
     background: rgba(255, 255, 255, .95);
     text-align: right;
-    padding: 20px 80px;
+    padding: 20px 40px;
     z-index: 1;
 }
 
@@ -60,8 +60,9 @@ header .menu {
     z-index: 2;
     text-align: center;
     opacity: 1;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
 header .menu.closed {
@@ -69,23 +70,23 @@ header .menu.closed {
     visibility: hidden;
 }
 
-header .overlay {
+header .menu .overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-
     opacity: 1;
     visibility: visible;
-    transition: transform 0.5s, opacity 0.5s;
+    -webkit-transition: transform 0.5s, opacity 0.5s, visibility 0.3s;
+    transition: transform 0.5s, opacity 0.5s, visibility 0.3s;
 }
 
 header .menu.closed .overlay {
     opacity: 0.4;
+    visibility: hidden;
     -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
-    visibility: hidden;
 }
 
 header .menu a {
@@ -102,7 +103,7 @@ header .menubtn {
 
 header .closebtn {
     text-align: right;
-    padding: 20px 80px;
+    padding: 20px 40px;
     cursor: pointer;
 }
 
@@ -134,27 +135,27 @@ footer a:hover {
 
 
 /*about section on home page*/
-.about .container {
-    padding: 80px;
+#work .about .container {
+    padding: 80px 40px;
 } 
 
 .about p {
     padding-top: 10px;
 }
 
-.about img.profile {
+#work .about img.profile {
     width: 100%;
     display: block;
     margin: auto;
 }
 
-.about img.text {
+#work .about img.text {
     width: 100%;
     margin-left: 0;
     max-width: 16rem;
 }
 
-.about .button {
+#work .about .button {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: black;
@@ -257,7 +258,7 @@ footer a:hover {
 }
 
 .samples .container {
-    padding: 70px 80px 70px;
+    padding: 70px 40px 70px;
 }
 
 .shot img {
@@ -285,6 +286,10 @@ footer a:hover {
     margin-bottom: 10px;
 }
 
+#about .about .container {
+    padding-top: 80px;
+}
+
 #about h2 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -295,7 +300,7 @@ footer a:hover {
 }
 
 #about .container {
-    padding-bottom: 40px;
+    padding: 20px 40px;
 }
 
 ul li {
@@ -359,6 +364,9 @@ ul li {
     }
 }
 
+
+
+
 /*media queries*/
 /*tablet*/
 @media screen and (max-width: 992px) {
@@ -380,7 +388,7 @@ ul li {
     }
 
     .samples .container {
-        padding: 40px 80px 40px;
+        padding: 40px;
     }
 }
 
@@ -388,5 +396,31 @@ ul li {
 @media screen and (max-width: 768px) {
     footer a img.text {
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .about .container {
+        padding: 80px 20px 40px;
+    }
+
+    .container, .samples .container {
+        padding: 40px 20px;
+    }
+
+    p, ul {
+        font-size: 1.3rem;
+    }
+
+    .case-study .title, #about h2 {
+        font-size: 2rem;
+    }
+
+    .case-study .subtext {
+        font-size: 0.9rem;
+    }
+
+    .samples h5 {
+        font-size: 1rem;
     }
 }
