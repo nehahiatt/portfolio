@@ -400,8 +400,12 @@ ul li {
 }
 
 @media screen and (max-width: 520px) {
-    .about .container {
+    .about .container, #work .about .container {
         padding: 80px 20px 40px;
+    }
+
+    #about .container {
+        padding: 20px;
     }
 
     .container, .samples .container {
