@@ -180,15 +180,15 @@ footer a:hover {
 }
 
 .case-study.teal {
-    background-color: #0d82a7;
+    background-color: #007DA7;
 }
 
 .case-study.blue {
-    background-color: #73A6E2;
+    background-color: #2966a0;
 }
 
 .case-study.green {
-    background-color: #87c148;
+    background-color: #63b724;
 }
 
 .case-study .container {
@@ -358,7 +358,7 @@ ul li {
 
 @media screen and (max-width: 460px) {
     .collage .picture {
-        height: 150px;
+        height: 250px;
         width: 100%;
         background-position: 50%;
     }

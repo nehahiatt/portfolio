@@ -22,15 +22,6 @@ app.factory('cases', [function() {
             "picture_position": true
         },
         {
-            "title": "Embracing Design Systems",
-            "description": "I made an impact at Capital One by establishing our very first version of a design system to house both developer and designer documentation. Today, this is used across product teams as a single source of truth to enable designers to design with speed and accuracy.",
-            "thumb_url": "images/cases/design-systems-thumb.png",
-            "button_text":"Get a sneak peek",
-            "button_url":"https://dribbble.com/shots/7066379-Capital-One-EASE-Design-System",
-            "background_color": "blue",
-            "picture_position": true
-        },
-        {
             "title": "Account Setup: A Framework for All",
             "description": "Creating enterprise-wide solutions for each feature is the most challenging aspect of my role on the flagship team at Capital One. This is greatly exemplified in my work creating a flexible account setup experience which fits the needs of all our customers - Bank, Credit Card, Auto Loan, etc.",
             "thumb_url": "images/cases/account-setup-thumb.png",
@@ -38,6 +29,15 @@ app.factory('cases', [function() {
             "button_url":"https://dribbble.com/shots/7083856-Single-vs-Multiple-Account-Setup",
             "background_color": "green",
             "picture_position": false
+        },
+        {
+            "title": "Embracing Design Systems",
+            "description": "I made an impact at Capital One by establishing our very first version of a design system to house both developer and designer documentation. Today, this is used across product teams as a single source of truth to enable designers to design with speed and accuracy.",
+            "thumb_url": "images/cases/design-systems-thumb.png",
+            "button_text":"Get a sneak peek",
+            "button_url":"https://dribbble.com/shots/7066379-Capital-One-EASE-Design-System",
+            "background_color": "blue",
+            "picture_position": true
         }
     ];
 
