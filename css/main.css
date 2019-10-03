@@ -325,26 +325,34 @@ ul li {
 
 @media screen and (max-width: 1200px) {
     .collage .picture {
-        height: 160px;
-        width: 160px;
+        height: 180px;
+        width: 180px;
     }
 }
 
 @media screen and (max-width: 992px) {
     .collage .picture {
-        height: 120px;
-        width: 120px;
+        height: 140px;
+        width: 140px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .collage .picture {
         height: 220px;
-        width: 47%;
+        width: 48%;
     }
 
     #about .banner {
         height: 350px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .collage .picture {
+        height: 220px;
+        width: 48%;
+        background-position: 50%;
     }
 }
 
