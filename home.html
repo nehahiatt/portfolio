@@ -1,0 +1,117 @@
+<div id="work" class="main home">
+
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <img class="text" src="images/well-hello-there-text.png">
+          <p>I'm Neha, product designer currently working at Meta. I specialize in UI/UX, design systems and front end development. My approach to design goes beyond visual aesthetics—it’s holistic, user-centered and collaborative. I’m passionate about creating simple solutions that solve needs for both the customer and business. My biggest strength is my background in both development and design, allowing me to create experiences with both perspectives in mind.
+          </p>
+          <div class="button-stack">
+            <a href="#/about" class="button">LEARN MORE ABOUT ME</a>
+            <a href="files/neha-sohail-resume-2023.pdf" class="button" download>VIEW RESUME</a>
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-6">
+          <img class="profile" src="images/profile-pic.jpg">  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-study {{ cases[0].background_color }}">
+    <case-study case="cases[0]"></case-study>
+  </section>
+
+  <section class="samples">
+    <div class="container">
+      <div class="row">
+        <h5 class="col-sm-12">SNIPPETS OF MY WORK</h5>
+
+        <div class="shots">
+          <div class="shot col-sm-12 col-md-4" ng-repeat="shot in shots | limitTo : 3 : 0"> 
+            <a href="{{ shot.shot_url }}" target="_blank"><img ng-src="{{ shot.thumbnail }}"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-study {{ cases[1].background_color }}">
+    <case-study case="cases[1]"></case-study>
+  </section>
+
+  <section class="samples">
+      <div class="container">
+        <div class="row">
+          <h5 class="col-sm-12">SNIPPETS OF MY WORK</h5>
+  
+          <div class="shots">
+            <div class="shot col-sm-12 col-md-4" ng-repeat="shot in shots | limitTo : 3 : 3"> 
+              <a href="{{ shot.shot_url }}" target="_blank"><img ng-src="{{ shot.thumbnail }}"></a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+  </section> 
+
+  <section class="case-study {{ cases[2].background_color }}">
+      <case-study case="cases[2]"></case-study>
+  </section>
+  
+  <section class="samples">
+    <div class="container">
+      <div class="row">
+        <h5 class="col-sm-12">SNIPPETS OF MY WORK</h5>
+
+        <div class="shots">
+          <div class="shot col-sm-12 col-md-4" ng-repeat="shot in shots | limitTo : 3 : 6"> 
+            <a href="{{ shot.shot_url }}" target="_blank"><img ng-src="{{ shot.thumbnail }}"></a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="case-study {{ cases[3].background_color }}">
+    <case-study case="cases[3]"></case-study>
+  </section>
+  
+  <section class="samples">
+    <div class="container">
+      <div class="row">
+        <h5 class="col-sm-12">SNIPPETS OF MY WORK</h5>
+
+        <div class="shots">
+          <div class="shot col-sm-12 col-md-4" ng-repeat="shot in shots | limitTo : 3 : 9"> 
+            <a href="{{ shot.shot_url }}" target="_blank"><img ng-src="{{ shot.thumbnail }}"></a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- <section class="case-study {{ cases[1].background_color }}">
+    <case-study case="cases[1]"></case-study>
+  </section> -->
+  
+  <!-- <section class="samples">
+    <div class="container">
+      <div class="row">
+        <h5 class="col-sm-12">SAMPLES OF MY WORK</h5>
+
+        <div class="shots">
+          <div class="shot col-sm-4" ng-repeat="shot in shots | limitTo : 3 : 12"> 
+            <a href="{{ shot.shot_url }}" target="_blank"><img ng-src="{{ shot.thumbnail }}"></a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>  -->
+
+</div>
