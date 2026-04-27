@@ -1,0 +1,51 @@
+<div id="about" class="main" ng-controller="AboutController">
+
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="banner"></div>
+        </div>
+        <div class="col-sm-12">
+          <p>Hi, I'm Neha — a creative, visual thinker and aspiring interior designer. I'm passionate about a lot of things, but specifically travel, home organization, the environment, and doing good in the world. I’m driven by curiosity and a desire to grow — always learning, experimenting, and finding new ways to make everyday experiences more meaningful. Outside of work, you’ll likely find me with a boba in hand, diving into a DIY project, playing tennis, or exploring the aisles of Trader Joe’s.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <h2>Fun Facts</h2>
+          <ul>
+            <li>Proud wife &#38; mom of ✌️</li>
+            <li>Zumba instructor</li>
+            <li>Certified scuba diver</li>
+            <li>Interior design enthusiast</li>
+            <li>Meyer-Briggs Personality: ESFJ</li>
+            <li>UX Leadership Strength: The Foreman</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-8">
+          <div class="collage col-sm-12">
+            <div class="picture col-sm-12" style="background-image:url({{picture.image_url}});" ng-repeat="picture in collage"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Work Experience</h2>
+          <p>Want to learn more about my skills and experience? View my resume here.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+</div>

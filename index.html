@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Neha Hiatt | Product Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400|Montserrat:500,600&display=swap" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet" />
+
+    <!-- Include the core AngularJS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <!-- Include the AngularJS routing library -->
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+
+  </head>
+
+  <body ng-app="myPortfolio">
+    <header ng-controller="NavController">
+      <nav>
+        <div class="menubtn" ng-click="toggleMenu()" ng-show="!menuvartrue"><svg style="width:40px;height:40px" viewBox="0 0 24 24"><path fill="#000000" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"/></svg></div>
+      </nav>
+
+      <div class="menu" ng-class="{'closed': !menuvartrue}">
+        <div class="closebtn" ng-click="toggleMenu()">
+          <svg style="width:40px;height:40px" viewBox="0 0 24 24"><path fill="white" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
+        </div>
+
+        <div class="overlay">
+          <!-- <a href="#">Resume</a> -->
+          <a href="#/" ng-click="toggleMenu()">Work</a>
+          <a href="#/about" ng-click="toggleMenu()">About</a>
+          <a href="https://dribbble.com/nsohail" target="_blank">Dribbble</a>
+          <a href="https://linkedin.com/in/neha-sohail-hiatt-69655758" target="_blank">LinkedIn</a>
+          <a href="mailto:nsohail92@gmail.com">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <div ng-view></div>
+
+    <footer>
+      <span class="footer-text">LIKE WHAT YOU SEE?</span> <a href="mailto:nsohail92@gmail.com">REACH OUT FOR MORE.</a>
+      <p>Made with &hearts; and AngularJS. &copy;2025 Neha Hiatt</p>
+    </footer>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/CaseService.js"></script>
+    <script src="js/services/ShotsService.js"></script>
+    <script src="js/services/CollageService.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/caseStudy.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+    <script src="js/controllers/NavController.js"></script>
+    <script src="js/controllers/AboutController.js"></script>
+
+  </body>
+</html>
