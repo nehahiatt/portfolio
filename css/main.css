@@ -405,13 +405,29 @@ footer a:hover {
     text-transform: uppercase;
     font-weight: 500;
     color: black;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-top: 0px;
 }
 
 ul li {
     padding-left: 10px;
     margin: 10px 0px;
+}
+
+.emoji-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.emoji-list li {
+    padding-left: 0;
+}
+
+.emoji-anchor {
+    display: inline-block;
+    width: 2rem;
+    text-align: center;
+    margin-right: 4px;
 }
 
 .collage {
