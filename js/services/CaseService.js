@@ -1,6 +1,18 @@
 app.factory('cases', [function() {
     var casesObject = [
         {
+            "title": "Messaging at Meta",
+            "description": "Led the 0-to-1 design of Meta's internal communications platform — giving product teams a single tool to create, manage, and communicate with users at scale across the entire family of apps.",
+            "subtext": "Comms Studio || Meta",
+            "thumb_url": "images/cases/qp-thumb-5-screens.png",
+            "button_text":"Reach out to learn more",
+            "button_url":"mailto:nsohail92@gmail.com",
+            "custom_styles": "scale: 1.15;",
+            "background_color": "meta-blue",
+            "picture_position": true,
+            "bleed": false
+        },
+        {
             "title": "Eno, your Capital One assistant",
             "description": "Designed the experience for Capital One's AI assistant across web, mobile, and tablet — helping customers manage their money through natural conversation.",
             "subtext": "\"The first natural language intelligent assistant from a US bank!\"",
@@ -23,18 +35,6 @@ app.factory('cases', [function() {
             "picture_position": false,
             "bleed": true,
             "custom_styles": "transform: scale(1.25); transform-origin: bottom;"
-        },
-        {
-            "title": "Messaging at Meta",
-            "description": "Led the 0-to-1 design of Meta's internal communications platform — giving product teams a single tool to create, manage, and communicate with users at scale across the entire family of apps.",
-            "subtext": "Comms Studio || Meta",
-            "thumb_url": "images/cases/qp-thumb-5-screens.png",
-            "button_text":"Reach out to learn more",
-            "button_url":"mailto:nsohail92@gmail.com",
-            "custom_styles": "scale: 1.15;",
-            "background_color": "meta-blue",
-            "picture_position": true,
-            "bleed": false
         },
         {
             "title": "Reimagining Account Setup",
