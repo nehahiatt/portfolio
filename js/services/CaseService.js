@@ -2,8 +2,8 @@ app.factory('cases', [function() {
     var casesObject = [
         {
             "title": "Messaging at Meta",
-            "description": "Led the 0-to-1 design of Meta's internal communications platform — giving product teams a single tool to create, manage, and communicate with users at scale across the entire family of apps.",
-            "subtext": "Comms Studio || Meta",
+            "description": "Led 0→1 design of a tool that helps Meta teams send messages to users across Facebook, Instagram, WhatsApp, and Messenger.",
+            "subtext": "Simplified fragmented workflows and developed a scalable solution through close collaboration with product and engineering.",
             "thumb_url": "images/cases/qp-thumb-5-screens.png",
             "button_text":"Reach out to learn more",
             "button_url":"mailto:nsohail92@gmail.com",

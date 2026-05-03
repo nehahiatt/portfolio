@@ -244,7 +244,7 @@ footer a:hover {
 
 .case-study .subtext {
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 500;
     color: #fff;
     opacity: .50;
