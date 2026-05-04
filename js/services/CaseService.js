@@ -2,19 +2,19 @@ app.factory('cases', [function() {
     var casesObject = [
         {
             "title": "Messaging at Meta",
-            "description": "Led the design of the cross-platform system that powers how Meta sends promotions across Facebook, Instagram, WhatsApp, and Messenger — reaching billions of people. Designed standard templates and reimagined campaign creation into an AI-powered workflow that takes campaigns from idea to launch.",
+            "description": "Led design for Meta's cross-platform system that powers promotional messaging across Facebook, Instagram, WhatsApp, and Messenger — reaching billions of people. Standardized templates for consistency at scale and shipped an AI-powered campaign workflow that takes a campaign from concept to launch-ready in minutes.",
             "subtext": "COMMS STUDIO || META",
             "thumb_url": "images/cases/qp-thumb-5-screens.png",
             "button_text":"Reach out to learn more",
             "button_url":"mailto:nsohail92@gmail.com",
-            "custom_styles": "scale: 1.15;",
+            "custom_styles": "scale: 1.1;",
             "background_color": "meta-blue",
             "picture_position": true,
             "bleed": false
         },
         {
-            "title": "Eno, Capital One AI Assistant",
-            "description": "Shaped the end-to-end experience for Capital One's AI assistant across web, mobile, and  tablet — enabling customers to complete everyday banking tasks through natural conversation. Designed conversation patterns and UX guardrails that made the experience feel reliable and intuitive.",
+            "title": "Eno, Your Capital One Assistant",
+            "description": "Shaped the end-to-end experience for Capital One's AI assistant across web, mobile, and tablet — enabling millions of customers to complete everyday banking tasks through natural conversation. Defined conversation patterns for core banking workflows, driving over 50% lift in credit card feature adoption and over $1M in business savings.",
             "subtext": "\"The first natural language intelligent assistant from a US bank!\"",
             "thumb_url": "images/cases/eno-thumb.png",
             "button_text":"See more of the experience",
@@ -26,7 +26,7 @@ app.factory('cases', [function() {
         },
         {
             "title": "Capital One Design System",
-            "description": "Created Capital One's first design system for native and web from the ground up. Defined the components, patterns, and governance that standardized product experiences across teams.",
+            "description": "Built Capital One's first unified design system for native and web from the ground up. Defined components and patterns, and created the go-to resource for usage guidance — bringing consistency across teams and accelerating product delivery.",
             "subtext": "ENTERPRISE || CAPITAL ONE",
             "thumb_url": "images/cases/ease-kit-thumb.png",
             "button_text":"Reach out to learn more",
